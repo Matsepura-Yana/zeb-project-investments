@@ -30,3 +30,5 @@ Als Benutzer möchte ich, dass die Anwendung die Renditeentwicklung in einem Dia
 damit ich die Ergebnisse visuell nachvollziehen kann.
 Als Benutzer möchte ich historische Daten über eine Webschnittstelle abfragen können, damit ich 
 die Entwicklung von Anlageklassen retrospektiv analysieren und mit der Simulation vergleichen kann
+
+
