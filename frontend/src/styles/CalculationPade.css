@@ -1,4 +1,6 @@
 .calculation-page {
+  display: flex;
+  flex-direction: column;
   padding: 50px;
   padding-top: 0px;
   display: flex;
@@ -9,24 +11,25 @@
 }
 
 .calculation-form {
-	flex: 1;
-	max-width: 35%;
-	border-radius: 30px;
-	padding: 25px 60px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: left;
-	margin-top: 0px;
+  flex: 1;
+  width: 35%;
+  border-radius: 30px;
+  padding: 25px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-top: 0px;
 }
 
 .calculation-page-text {
-    flex: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-    max-width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 50%;
+  margin-left: 90px;
 }
 
 .calculation-page-title {
@@ -43,21 +46,21 @@
 }
 
 .calculation-page input {
-    width: 100%;
-    padding: 15px 18px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 35px;
-    height: 66px;
-    font-size: 20px;
-    box-sizing: border-box;
-    color: #2d2d2d;
+  width: 100%;
+  padding: 15px 18px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  height: 66px;
+  font-size: 20px;
+  box-sizing: border-box;
+  color: #2d2d2d;
 }
 
 .calculation-page label {
-    font-size: 25px;
-    color: #2d2d2d;
-    margin-left: 10px;
+  font-size: 25px;
+  color: #2d2d2d;
+  margin-left: 10px;
 }
 
 .calculation-page button {
@@ -78,106 +81,97 @@
 }
 
 .calculation-button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 #investment-type-list option {
-    padding: 15px 18px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 35px;
-    height: 66px;
-    font-size: 30px;
-    box-sizing: border-box;
-    color: #2d2d2d;
-    background-color: #ffffff;
+  padding: 15px 18px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  height: 66px;
+  font-size: 30px;
+  box-sizing: border-box;
+  color: #2d2d2d;
+  background-color: #ffffff;
 }
 
 .result-table {
-    margin-top: 0px;
-    border-collapse: collapse;
-    text-align: center;
-    border: #2d2d2d69 2px solid;
-    height: 320px;
-    font-size: 20px;
-    margin: 0px;
-    margin-bottom: 30px;
-    width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border: #2d2d2d69 2px solid;
+  height: 320px;
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .table-container {
-    align-items: center;
-    justify-content: center;
-    width: 35%;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  margin-top: 20px;
+  margin-right: 140px;
 }
 
-.result-table-row{
-    border: #2d2d2d69 2px solid;
-    padding: 10px 15px;
+.result-table-row {
+  border: #2d2d2d69 2px solid;
+  padding: 10px 15px;
 }
 
-.table-header{
-    border: #2d2d2d69 2px solid;
-    padding: 7px 10px;
+.table-header {
+  border: #2d2d2d69 2px solid;
+  padding: 7px 10px;
 }
 
-.total-return, .end-capital {
-    font-size: 23px;
-    color: #2d2d2d;
-    margin: 0px;
-    margin-top: 7px;
-}
-
-.left-panel,
-.right-panel {
-  flex: 1;
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-              opacity 0.6s ease;
-}
-
-/* START */
-.calculation-page-content .left-panel {
-  transform: translateX(0);
-}
-.calculation-page-content .right-panel {
-  transform: translateX(0);
-}
-
-/* NACH BERECHNUNG */
-.calculation-page-content.show-results .left-panel {
-  transform: translateX(40px);
-}
-
-.calculation-page-content.show-results .right-panel {
-  transform: translateX(-40px);
-}
-
-/* Fade-Schweben */
-.left-panel > *,
-.right-panel > * {
-  animation: floatIn 0.7s ease;
-}
-
-@keyframes floatIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.total-return,
+.end-capital {
+  font-size: 23px;
+  color: #2d2d2d;
+  margin: 0px;
+  margin-top: 7px;
 }
 
 .calculation-page-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    min-height: 91vh;
-    margin-top: 110px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  min-height: 91vh;
+  margin-top: 95px;
+  width: 100%;
+}
+
+.investment-info {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  text-align: center;
+  color: #575656ab;
+  font-weight: lighter;
+}
+.investment-info p {
+  margin: 0px;
+}
+
+.calculation-page {
+  position: relative;
+}
+
+.overlay-form {
+  position: absolute;
+  z-index: 50;
+  transition: transform 0.6s ease;
+  background-color: #fdfdfd;
+  right: 0;
+  margin-right: 90px;
+}
+
+.overlay-form.shifted {
+  transform: translate(-120%, 0);
+  margin-right: 0px;
 }
