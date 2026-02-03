@@ -1,0 +1,45 @@
+.main-page {
+  padding: 90px;
+  padding-top: 0px;
+  min-height: 91vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 50%;
+}
+
+.main-page-title {
+  font-size: 70px;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.main-page-description {
+  font-size: 40px;
+  color: #424040;
+  margin-top: 0px;
+}
+
+.main-page-button {
+  margin-top: 0px;
+  padding: 15px 30px;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #f5f5f5a9;
+  border: 2px solid #2d2d2d;
+  border-radius: 35px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main-page-button:hover {
+  background-color: #e0e0e089;
+}
+
+.main-page a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2d2d2d;
+}

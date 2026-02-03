@@ -1,0 +1,38 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #F5F5F5;
+	color: #000000;
+	padding: 10px 30px ;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	z-index: 98;
+	transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+	background-color: #f5f5f5a9;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-link img {
+    height: 70px;
+    border: none;
+    outline: none;
+    display: block;
+    margin-right: 20px;
+}
+
+.dashboard-title {
+    font-size: 35px;
+    font-weight: bold;
+}
