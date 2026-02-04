@@ -1,15 +1,16 @@
 import { useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
 import "../styles/Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
 
   return (
     <header className="header">
-      <a href="/" className="logo-link">
+      <Link className="logo-link" to="/">
         <img src={logo} alt="Logo" height={100} />
-      </a>
+      </Link>
       <h1 className="dashboard-title">Investment Dashboard</h1>
     </header>
   );
