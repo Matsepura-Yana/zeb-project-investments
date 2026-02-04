@@ -1,8 +1,8 @@
-import Header from './components/Header.jsx'
-import MainPage from './pages/MainPage.jsx'
-import CalculationPage from './pages/CalculationPage.jsx'
-import Footer from './components/Footer.jsx'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import Header from "./components/Header.jsx";
+import MainPage from "./pages/MainPage.jsx";
+import CalculationPage from "./pages/CalculationPage.jsx";
+import Footer from "./components/Footer.jsx";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
       </Routes>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -1,4 +1,5 @@
 import "../styles/MainPage.css";
+import { Link } from "react-router-dom";
 
 const MainPage = () => {
   return (
@@ -10,9 +11,9 @@ const MainPage = () => {
         helps you compare different scenarios and make confident decisions
         aligned with your financial goals.
       </p>
-      <a href="/calculation">
+      <Link to="/calculation">
         <button className="main-page-button">Start calculation</button>
-      </a>
+      </Link>
     </main>
   );
 };
